@@ -808,6 +808,7 @@ input[type="radio"] {
   position: relative;
   padding: 17px 40px;
   font-weight: 700;
+  line-height: 1.15;
   border-top: 2px solid;
   border-bottom: 2px solid;
   transition: 0.3s all ease-out;
