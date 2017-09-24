@@ -12,7 +12,7 @@
   <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.js"></script>
 <link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css" media="screen" />
 </head>
-<body>
+<body class="bg-opacity">
   <header>
      <div class="wrapper">
       <nav class="main-nav">
@@ -68,17 +68,35 @@
           <img class="my-photo" src="img/photo.jpg" alt="Мое фото">
         </div>
         <div class="about-myself__information">
-          <p class="about-myself__text"><span>Образование: высшее<br>
-            Шадринский государственный педагогический институт; 2005 год.</span>
-            <span>Педагогический стаж: 31 год</span>
-            <span>Квалификационная категория, год присвоения:<br>
-            Высшая квалификационная категория, 2014г.</span>
-            <span>Повышение квалификации:<br>
-              Срок: 2013год, удостоверение (регистрационный номер 823)<br>
-              Место: АУ СПО ХМАО-Югры «Ханты-Мансийский технолого-педагогический колледж»<br>
-              Тема: «Новые подходы в организации и планировании образовательного процесса в ДОУ в соответствии с ФГТ»</span>
+          <p class="about-myself__text">
+            <span>МАДОУ «Золушка» <br>г. Когалым, ХМАО-Югра</span>
+            <span class="big">Житник Зоя Анатольевна</span>
+            <span>Высшая квалификационная категория</span>
           </p>
         </div>
+      </section>
+      <section class="additional-info">
+        <p><span>Образование:</span> высшее<br>Шадринский государственный педагогический институт; 2005 год.</p>
+        <p><span>Педагогический стаж:</span> 31 год</p>
+        <p><span>Квалификационная категория, год присвоения:</span><br>
+           Высшая квалификационная категория, 2014г.</p>
+        <p><span>Повышение квалификации:</span></p>
+        <table>
+          <thead>
+            <tr>
+              <td><span>Срок</span></td>
+              <td><span>Место</span></td>
+              <td><span>Тема</span></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2013год, удостоверение (регистрационный номер 823)</td>
+              <td>АУ СПО ХМАО-Югры «Ханты-Мансийский технолого-педагогический колледж»</td>
+              <td>«Новые подходы в организации и планировании образовательного процесса в ДОУ в соответствии с ФГТ» </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
       <h2>Мои достижения</h2>
       <section class="fancybox-gallery">
@@ -132,7 +150,9 @@
           </a>
       </section>
     </div>
+    <button onclick="topFunction()" id="return-to-top" title="Наверх"></button>
   </main>
+  <script src="js/script.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $(".fancybox-link").fancybox({

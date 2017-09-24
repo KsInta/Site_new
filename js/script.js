@@ -1,12 +1,12 @@
-$("#tabs.tabs--mi-skazochniki>.tabs__link-wrapper>a").click( function () {
-
-        $("#tabs.tabs--mi-skazochniki>.tabs__link-wrapper>a").removeClass("current");
-        $(this).addClass("current");
-
-        $(".tabs_content>div").hide();
-        t_content=$(this).attr("href");
-        $(t_content).show();
-
-        return false
-    })
-$("#tabs.tabs--mi-skazochniki>.tabs__link-wrapper>a:first").trigger("click");
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 500) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
