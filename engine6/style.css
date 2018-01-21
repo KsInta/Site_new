@@ -9,7 +9,7 @@
 	position: relative;
 	width: 100%;
 	max-width: 1140px;
-	max-height:776px;
+	max-height:830px;
 	margin:0px auto 0px;
 	z-index:90;
 	text-align:left; /* reset align=center */
@@ -51,7 +51,7 @@
 	left:0;
 	top:0;
 	height:100%;
-	max-height:776px;
+	max-height:768px;
 	max-width: 1140px;
 	vertical-align: top;
 	border:4px solid #F71277;
@@ -60,7 +60,7 @@
 #wowslider-container6 .ws_images ul a{
 	width:100%;
 	height:100%;
-	max-height:776px;
+	max-height:768px;
 	display:block;
 	color:transparent;
 }
@@ -76,7 +76,7 @@
 	margin:0;
 }
 #wowslider-container6 .ws_images > div > img {
-	max-height:776px;
+	max-height:830px;
 }
 
 #wowslider-container6 .ws_images iframe {
@@ -300,11 +300,71 @@
 	text-transform: none;
 	line-height: 1.15em;
 	padding:0.6em;
-}#wowslider-container6 .ws_bullets  a img{
+}#wowslider-container6  .ws_thumbs { 
+	overflow:auto;
+	z-index:60;
+}
+#wowslider-container6 .ws_thumbs img{
+	text-decoration: none;
+	border: 0;
+	width: 100%;
+}
+#wowslider-container6 .ws_thumbs a {
+	position:relative;
+	text-indent: -4000px; 
+	color:transparent;
+	opacity:0.85;
+	text-decoration: none;
+	display: inline-block;
+	border: 0;
+	line-height: 0;
+	margin:0.09%;
+	text-indent:0;
+	padding: 0.13%;
+	width: 2.2627027027027%;
+	max-width: 72px;
+}
+#wowslider-container6 .ws_thumbs a:hover{
+	opacity:1;
+}
+#wowslider-container6 .ws_thumbs a:hover img{
+	visibility:visible;
+}
+#wowslider-container6 .ws_images,
+#wowslider-container6 .ws_shadow {
+	margin-bottom: 7.7em;
+}
+#wowslider-container6  .ws_thumbs {
+    position: absolute;
+    text-align: left;
+
+    bottom: 0;
+    left: 0;
+	width:100%;
+	height: 7.7em;
+}
+#wowslider-container6  .ws_thumbs div{
+	position:relative;
+	letter-spacing:-4px;
+	width:373.7em;
+	height: 100%;
+}#wowslider-container6 .ws_thumbs a.ws_selthumb{
+	background-color: #F71277;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+#wowslider-container6 .ws_thumbs  a{
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);	
+	background-color: #fff;
+}
+
+#wowslider-container6 .ws_bullets  a img{
 	text-indent:0;
 	display:block;
 	bottom:20px;
-	left:-35px;
+	left:-36px;
 	visibility:hidden;
 	position:absolute;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
@@ -325,7 +385,7 @@
 	left:0;
 	overflow:hidden;
 	position:relative;
-	width:70px;
+	width:72px;
 	background-color:#FFFFFF;
 }
 #wowslider-container6  .ws_bullets .ws_bulframe{
@@ -344,7 +404,7 @@
 	position:absolute;
 	bottom:-10px;
 	margin-left:-6px;
-	left:35px;
+	left:36px;
 	background:url(./triangle.png);
 	width:15px;
 	height:6px;
