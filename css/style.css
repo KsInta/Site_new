@@ -427,7 +427,7 @@ a {
 }
 h1,
 h2 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: center;
 }
 .title--center {
@@ -690,12 +690,14 @@ main .wrapper {
   margin-bottom: 50px;
 }
 blockquote {
-  font-size: 22px;
-  text-align: center;
-}
-blockquote + span {
-  display: block;
+  font-size: 18px;
   text-align: right;
+  font-style: italic;
+  font-weight: 600;
+}
+blockquote.games p {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .about-myself-wrapper {
   display: -ms-flexbox;
@@ -996,7 +998,7 @@ label[for="season-autumn"]:hover::after {
 .fancybox-gallery .fancybox-link:hover {
   border: 2px solid #808080;
 }
-.fancybox-gallery .fancybox-link .fancybox-overlay {
+.fancybox-gallery .fancybox-link .fancybox-overlay-1 {
   position: absolute;
   display: -ms-flexbox;
   display: flex;
@@ -1011,12 +1013,12 @@ label[for="season-autumn"]:hover::after {
   transform: scale(0.8);
   transition: 0.3s all ease-out;
 }
-.fancybox-gallery .fancybox-link .fancybox-overlay:hover {
+.fancybox-gallery .fancybox-link .fancybox-overlay-1:hover {
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.55);
   transform: scale(1);
 }
-.fancybox-gallery .fancybox-link .fancybox-overlay span {
+.fancybox-gallery .fancybox-link .fancybox-overlay-1 span {
   display: inline-block;
   vertical-align: middle;
   padding: 5px;
@@ -1067,6 +1069,9 @@ label[for="season-autumn"]:hover::after {
   position: relative;
   transition: 0.5s all ease-out;
 }
+.journal-section-item-image--1-img {
+  width: auto;
+}
 .journal-section-item-desc {
   display: -ms-flexbox;
   display: flex;
@@ -1099,50 +1104,34 @@ label[for="season-autumn"]:hover::after {
   width: 100%;
   height: auto;
 }
+.journal-section-item .fancybox-link {
+  border: none;
+  margin: 10px;
+}
+.journal-section-item .fancybox-link:hover {
+  border: none;
+}
 .project-preview {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   font-size: 15px;
+}
+.project-preview__main {
+  display: none;
+}
+.project-preview h2 {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: left;
+  cursor: pointer;
+  border-bottom: 1px dotted;
 }
 .project-preview .btn {
   display: block;
   width: 200px;
   margin-top: 30px;
-}
-.project-preview::before,
-.project-preview::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  transition: all 0.3s ease-out;
-  opacity: 0;
-}
-.project-preview::before {
-  top: 0;
-  left: 0;
-}
-.project-preview::after {
-  right: 0;
-  bottom: -20px;
-}
-.project-preview:hover::before {
-  left: -20px;
-  width: 150px;
-  height: 150px;
-  border-top: 1px solid #0ebbeb;
-  border-left: 1px solid #0ebbeb;
-  box-shadow: -3px -3px 5px rgba(14, 187, 235, 0.4);
-  opacity: 1;
-}
-.project-preview:hover::after {
-  right: -20px;
-  width: 150px;
-  height: 150px;
-  border-right: 1px solid #0ebbeb;
-  border-bottom: 1px solid #0ebbeb;
-  box-shadow: 3px 3px 5px rgba(14, 187, 235, 0.4);
-  opacity: 1;
 }
 .project-preview__thesis {
   line-height: 1.5;
@@ -1434,6 +1423,19 @@ label[for="season-autumn"]:hover::after {
       align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.tabs__content-item-wrapper .fancybox-link {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  width: 350px;
+  border: none;
+}
+.tabs__content-item-wrapper .fancybox-link:hover {
+  border: none;
+}
+.tabs__content-item-wrapper .fancybox-link img,
+.tabs__content-item-wrapper .fancybox-link .fancybox-overlay-1 {
+  border-radius: 5px;
 }
 .tabs__content-item {
   display: none;
