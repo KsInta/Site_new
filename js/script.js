@@ -10,3 +10,17 @@ $('#return-to-top').click(function() {      // When arrow is clicked
         scrollTop : 0                       // Scroll to top of body
     }, 500);
 });
+
+$('.project-preview__title').on('click', function() {
+  if (!$(this).hasClass('active')) {
+    $('.project-preview__title.active').next().slideToggle(500);
+    $('.project-preview__title').removeClass('active');
+    $(this).addClass('active');
+    $(this).next().slideToggle(500);
+  } else if ($(this).hasClass('active')) {
+    $(this).removeClass('active');
+    $(this).next().slideToggle(500);
+  }
+});
+
+

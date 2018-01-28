@@ -2,20 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Персональный сайт воспитателя Житник Зои</title>
+  <title>Проект «Мы сказочники»</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://use.fontawesome.com/575cadee90.js"></script>
+  <script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+  <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css" media="screen" />
 </head>
-<body class="for-background">
+<body>
   <header>
      <div class="wrapper">
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li class="main-nav-item">
-            <a class="main-nav-link active">Информация о сайте</a>
+            <a class="main-nav-link" href="info.html">Информация о сайте</a>
           </li>
           <li class="main-nav-item">
             <a class="main-nav-link" href="index.html">Мое портфолио</a>
@@ -35,7 +38,7 @@
             </ul>
           </li>
           <li class="main-nav-item">
-            <a class="main-nav-link" href="#">Методическая копилка</a>
+            <a class="main-nav-link active" href="#">Методическая копилка</a>
             <ul class="main-nav-dropdown-list">
               <li>
                 <a href="outlines.html">Конспекты</a>
@@ -46,8 +49,8 @@
               <li>
                 <a href="publishing-activities.html">Издательская деятельность</a>
               </li>
-              <li>
-                <a href="igroteka.html">Игротека</a>
+              <li class="active">
+                <a>Игротека</a>
               </li>
             </ul>
           </li>
@@ -80,29 +83,36 @@
   </header>
   <main>
     <div class="wrapper">
-      <blockquote>
-        <p>«Дети должны жить в мире красоты, игры, сказки, музыки, рисунка, фантазии, творчества.»</p>
-        <div>(В. А. Сухомлинский)</div>
+      <h1>Игротека</h1>
+      <blockquote class="games">
+        <p>«Игра – это искра, зажигающая огонек пытливости и любознательности»</p>
+        <div class="author">В. А. Сухомлинский</div>
       </blockquote>
-      <section class="site-info">
-        <div class="my-photo-image">
-          <img class="my-photo" src="img/photo.jpg" alt="Мое фото">
-        </div>
-        <div class="site-info__descr">
-          <p class="site-info__text">
-            Персональный сайт Житник Зои Анатольевны<br>
-            воспитателя МАДОУ «Золушка»<br>
-            адрес:628484  ул. Ленинградская 63, г. Когалым, ХМАО- Югра<br>
-            тел. (34667) 2-04-20<br>
-          </p>
-          <p class="site-info__text">
-            Добро пожаловать на мой сайт, который создан  с целью обобщения,  систематизации  и   распространения накопленного   материала;  виртуального  общения с коллегами с целью получения новых знаний.
-          </p>
-        </div>
+      <section class="journal-section">
+        <article class="journal-section-item">
+          <section class="fancybox-gallery fancybox-gallery--photoalbum">
+            <a class="fancybox-link" rel="group1" href="img/projects/mi-skazochniki-compressed/learn-to-speak.jpg">
+              <div class="fancybox-overlay-1"><span>Увеличить</span></div>
+              <img src="img/projects/mi-skazochniki-compressed/learn-to-speak.jpg" width="200" alt="">
+            </a>
+          </section>
+          <div class="journal-section-item-desc">
+            <h2>Игры по развитию речи</h2>
+            <a class="btn" href="pdf/Игры по развитию речи.pdf">Читать полностью...</a>
+          </div>
+        </article>
       </section>
     </div>
     <button onclick="topFunction()" id="return-to-top" title="Наверх"></button>
   </main>
   <script src="js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".fancybox-link").fancybox({
+        openEffect	: 'elastic',
+        closeEffect	: 'elastic'
+      });
+    });
+  </script>
 </body>
 </html>
